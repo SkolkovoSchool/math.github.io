@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Школа "Сколково" - Математические курсы</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Школа "Сколково"</h1>
+        <p>Профессиональное математическое образование</p>
+    </header>
+
+    <main>
+        <!-- Курс Матанализа -->
+        <section class="course-card" id="calculus">
+            <h2>Математический анализ</h2>
+            <div class="price-box">
+                <div class="full-price">
+                    <span>Полный курс:</span>
+                    <span class="price">300 000 ₽</span>
+                </div>
+                <div class="monthly-price">
+                    <span>Ежемесячный платёж:</span>
+                    <span class="price">17 500 ₽/мес</span>
+                </div>
+            </div>
+            <div class="topics">
+                <h3>Темы курса:</h3>
+                <ul>
+                    <li>Пределы и непрерывность</li>
+                    <li>Дифференциальное исчисление</li>
+                    <li>Интегралы и их приложения</li>
+                    <li>Ряды и последовательности</li>
+                    <li>Функции многих переменных</li>
+                </ul>
+            </div>
+            <button class="enroll-btn" data-course="Матанализ">Записаться</button>
+        </section>
+
+        <!-- Курс Дискретной математики -->
+        <section class="course-card" id="discrete-math">
+            <h2>Дискретная математика</h2>
+            <div class="price-box">
+                <div class="full-price">
+                    <span>Полный курс:</span>
+                    <span class="price">150 000 ₽</span>
+                </div>
+                <div class="monthly-price">
+                    <span>Ежемесячный платёж:</span>
+                    <span class="price">10 000 ₽/мес</span>
+                </div>
+            </div>
+            <div class="topics">
+                <h3>Темы курса:</h3>
+                <ul>
+                    <li>Теория множеств</li>
+                    <li>Математическая логика</li>
+                    <li>Теория графов</li>
+                    <li>Комбинаторика</li>
+                    <li>Дискретные алгоритмы</li>
+                </ul>
+            </div>
+            <button class="enroll-btn" data-course="Дискретная математика">Записаться</button>
+        </section>
+    </main>
+
+    <!-- Модальное окно -->
+    <div class="modal-overlay" id="modal">
+        <div class="modal">
+            <h3>Запись на курс</h3>
+            <form id="enroll-form">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="email" placeholder="Ваш email" required>
+                <input type="tel" placeholder="Ваш телефон" required>
+                <button type="submit">Отправить заявку</button>
+            </form>
+            <button class="close-btn">&times;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
